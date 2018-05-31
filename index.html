@@ -4,8 +4,8 @@
 <style>
 
 circle {
-  fill: #eee;
-  stroke: #000;
+  fill: #2f7254;
+  stroke: #eee;
   stroke-width: 1.5px;
 }
 
@@ -14,19 +14,19 @@ circle {
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
-// Ratio of Obese (BMI >= 30) in U.S. Adults, CDC 2008
+// Ratio
 var valueById = [
    NaN, .187, .198,  NaN, .133, .175, .151,  NaN, .100, .125,
-  .171,  NaN, .172, .133,  NaN, .108, .142, .167, .201, .175,
+  .311,  NaN, .172, .133,  NaN, .108, .142, .167, .201, .175,
   .159, .169, .177, .141, .163, .117, .182, .153, .195, .189,
   .134, .163, .133, .151, .145, .130, .139, .169, .164, .175,
   .135, .152, .169,  NaN, .132, .167, .139, .184, .159, .140,
   .146, .157,  NaN, .139, .183, .160, .143
 ];
 
-var margin = {top: 0, right: 0, bottom: 0, left: 0},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom,
+var margin = {top: 10, right: 10, bottom: 10, left: 10},
+    width = 1200 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom,
     padding = 3;
 
 var projection = d3.geo.mercator();
